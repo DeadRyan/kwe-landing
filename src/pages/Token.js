@@ -34,7 +34,7 @@ export const Token = () => {
             <div className="child">
               <p className="">KWE Token Price on P2PB2B Crypto Exchange</p>
               <p className="price">NOW $$ 0.09 USD</p>
-              <p className="">Listing Price</p>
+              <p className="">Listing Price was $ 0.05 USD</p>
               <div className='tokens d-flex flex-wrap'>
                 <img src={TokenImg} loading="lazy" alt="" className=""/>
                 <img src={EthereumImg} loading="lazy" alt="" className=""/>
