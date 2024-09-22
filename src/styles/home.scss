@@ -1,0 +1,182 @@
+.feature-card{
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.03) -30.29%, rgba(255, 255, 255, 0) 144.92%);
+  backdrop-filter: blur(25px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 15px;
+  padding: 34px 30px;
+  text-align: center;
+  border: 1px solid #F5FBF2;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  max-width: 318px;
+  @media screen and (min-width: 834px){
+    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+  }
+  img{
+    margin-bottom: 1.5rem;
+  }
+  .title{
+    font-family: 'Fontspring demo nekst', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    @media screen and (min-width: 1440px){
+      font-size: 20px;
+    }
+    margin-bottom: 1.5rem;
+  }
+  .content{
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    
+    @media screen and (min-width: 1440px){
+      font-size: 16px;
+    }
+  }
+}
+.feature-card-container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  @media screen and (min-width: 834px){
+    flex-direction: row;
+  }
+}
+.roadmap{
+  .mobile{
+    @media screen and (min-width: 834px){
+      display:none;
+    }
+    margin-top:1rem;
+  }
+  .tab{
+    display:none;
+    margin-top:2rem;
+    @media screen and (min-width: 834px){
+      display:block;
+    }
+    @media screen and (min-width: 1440px){
+      display:none;
+    }
+  }
+
+  .desktop{
+    display:none;
+    @media screen and (min-width: 1440px){
+      display:block;
+      margin-top: 2rem;
+    }
+  }
+}
+.pillar-card{
+  margin-top: 3rem;
+  text-align: center;
+  background: linear-gradient(165.98deg, rgba(200, 255, 232, 0.12) -3.13%, rgba(217, 217, 217, 0) 93.55%);
+  border-radius: 38px;
+  border: 4px solid #113E4B;
+  padding: 34px 30px;
+  position: relative;
+  @media screen and (min-width: 834px){
+    max-width: 30%;
+  }
+  img{
+    width: 56px;
+    position: absolute;
+    left: calc(50% - 28px);
+    top: -28px;
+    @media screen and (min-width: 1440px){
+      width: 104px;
+      left: calc(50% - 52px);
+      top: -52px;
+    }
+  }
+  .title{
+    font-family: 'Fontspring demo nekst', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 1rem;
+    @media screen and (min-width: 1440px){
+      font-size: 24px;
+      margin-top:2rem;
+    }
+  }
+  .content{
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    @media screen and (min-width: 1440px){
+      font-size: 16px;
+    }
+  }
+}
+.pillar-container{
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media screen and (min-width: 834px){
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+}
+.team-card{
+  padding: 18px;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(2px);
+  margin:5px;
+  /* Note: backdrop-filter has minimal browser support */
+  border: 1px solid #E2FFF0;
+  border-radius: 17px;
+  text-align: center;
+  @media screen and (min-width: 834px){
+    padding: 40px;
+    margin:10px;
+  }
+  img{
+    max-width: 114px;
+    border-radius: 10px;
+    @media screen and (min-width: 834px){
+      max-width: 218px;
+    }
+  }
+  .title{
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Fontspring demo nekst', sans-serif;
+    @media screen and (min-width: 834px){
+      font-size: 20px;
+    }
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .description{
+    opacity: 0.5;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    @media screen and (min-width: 834px){
+      font-size: 20px;
+    }
+  }
+}
+.team-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.section-15{
+  @media screen and (min-width: 834px){
+    margin: auto;
+  }
+  @media screen and (min-width: 1440px){
+  }
+}

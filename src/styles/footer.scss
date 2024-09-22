@@ -1,0 +1,116 @@
+
+.footer{
+  margin-top: 50px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 74rem;
+  font-size: 12px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  @media screen and (min-width: 834px){
+    flex-direction: row;
+  }
+  @media screen and (min-width: 991px){
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  @media screen and (min-width: 1440px){
+    font-size: 16px;
+  }
+  a{
+    text-decoration: none;
+  }
+  .logo{
+    cursor: pointer;
+    @media screen and (max-width: 834px){
+      margin:auto;
+    }
+  }
+  .items{
+    opacity: 0.7;
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    margin-top: 1rem;
+    margin-bottom: 1rem;   
+    a{
+      color: white;
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-right: 1rem;
+      margin-left: 1rem;
+      cursor: pointer;
+      &.active{
+        color: #03E287;
+      }
+    }
+    
+    .dropdown-container{
+      margin-top: auto;
+      margin-bottom: auto;
+      cursor: pointer;
+      position: relative;
+      .title{
+        cursor: pointer;
+        display: flex;
+        div{
+          margin-right: 0.5rem;
+        }
+        img{
+          width: 20px;
+          margin-top: auto;
+          margin-bottom: auto;
+        }
+      }
+      .dropdown{
+        position: absolute;
+        width: 200px;
+        top:30;
+        left: 0;
+        padding: 1rem;
+        background: rgba(1, 20, 29, 0.19);
+        backdrop-filter: blur(9.5px);
+        border-radius: 17px;
+        border: 1px solid #01141D;
+        &.d-none{
+          display: none;
+        }
+      }
+
+    }
+  }
+  .cta-button{
+    @media screen and (max-width: 834px){
+      display:none;
+    }
+    display: flex;
+    border-radius: 20px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    border: 2px solid #03E287;
+    cursor: pointer;
+    img{
+      width: 1rem;
+      height: 1rem;
+      margin-top: auto;
+      margin-bottom:auto;
+    }
+    span{
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-left: 0.25rem;
+      color:#03E287;
+    }
+  }
+}
+.text-green{
+  color:#03E287;
+}
+.copyright{
+  margin-top: auto;
+  margin-bottom: auto;
+}

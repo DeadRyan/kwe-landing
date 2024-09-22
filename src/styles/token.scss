@@ -1,0 +1,101 @@
+.section-7{
+  p{
+    color: white;
+    font-size: 14px;
+    @media screen and (min-width: 1440px){
+      font-size: 16px;
+    }
+  }
+  font-family: Inter, sans-serif;
+  overflow-wrap: break-word;
+}
+.d-flex{
+  display: flex;
+}
+.flex-col{
+  flex-direction: column;
+}
+.flex-wrap{
+  flex-wrap: wrap;
+}
+.child{
+  width: 50%;
+  .logo-container{
+    display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 834px){
+      flex-direction: row;
+    }
+    .logo{
+      max-width: 65px;
+      margin-bottom: 1rem;
+      @media screen and (min-width: 1440px){
+        min-width: 81px;
+      }
+      @media screen and (min-width: 834px){
+        max-width: 58px;
+        margin-right: 1rem;
+        margin-bottom: 0;
+      }
+    }
+    .title-container{
+      flex-direction: column;
+      @media screen and (min-width: 834px){
+        flex-direction: row;
+      }
+    }
+    .title{
+      padding-right:0.5rem;
+      font-size: 24px;
+      font-weight: 700;
+      font-family: 'Fontspring demo nekst', sans-serif;
+      padding-top: 5px;
+      margin-top: auto;
+      margin-bottom: auto;
+      @media screen and (min-width: 1440px){
+        font-size: 40px;
+      }
+    }
+  }
+  .price{
+    font-size: 32px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    @media screen and (min-width: 1440px){
+      font-size: 40px;
+    }
+  }
+  .tokens{
+    img{
+      max-width: 42px;
+      margin-right: 1rem;
+      margin-bottom: 0.5rem;
+      @media screen and (min-width: 1440px){
+        min-width: 80px;
+      }
+    }
+  }
+  
+}
+.more-details{
+  @media screen and (min-width: 390px){
+    width: 90%;
+  }
+  margin-top: 3rem;
+  &.desktop{
+    display: none;
+    @media screen and (min-width: 834px){
+      display: block;
+    }
+  }
+  &.mobile{
+    @media screen and (min-width: 834px){
+      display: none;
+    }
+    
+  }
+  .title{
+    font-weight: 700;
+    color: #03E287;
+  }
+}
