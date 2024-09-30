@@ -38,4 +38,13 @@
     ]
   },
   "devDependencies": {}
+
+  {
+    "name": "your-app",
+    "version": "0.1.0",
+    "private": true,
+    "proxy": "http://154.38.178.214"
+  }
+  
+
 }
