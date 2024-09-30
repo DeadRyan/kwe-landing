@@ -1,0 +1,15 @@
+.price-ticker {
+    font-size: 18px;
+    color: #007bff;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .price-ticker .error {
+    color: red;
+  }
+  
