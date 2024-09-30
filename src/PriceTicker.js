@@ -1,37 +1,40 @@
 import React, { useState, useEffect } from 'react';
+import './styles/PriceTicker.css'; // Optional: add your CSS styling for the ticker here
 
 const PriceTicker = () => {
-  const [price, setPrice] = useState('Fetching price...');
-  const [error, setError] = useState('');
+  const [price, setPrice] = useState(null);
+  const [error, setError] = useState(null);
 
-  // Function to fetch the KWE/USDT price from the VPS API
-  const fetchPrice = async () => {
+  const fetchKWEUSDTPrice = async () => {
     try {
-      const response = await fetch('http://154.38.178.214/api/price'); // Replace with your VPS IP address
+      const response = await fetch('https://kwepriceticker.com/api/price');
       const data = await response.json();
 
       if (data.success) {
-        setPrice(data.result.last);
+        setPrice(data.result.last); // Assuming 'last' is the field with the price
       } else {
-        throw new Error(data.message || 'Unknown API error');
+        setError('Error fetching price');
       }
-    } catch (err) {
-      setError(`Error fetching price: ${err.message}`);
+    } catch (error) {
+      setError(`Error fetching price: ${error.message}`);
     }
   };
 
   useEffect(() => {
-    fetchPrice();
-
-    // Optionally refresh the price every 30 seconds
-    const interval = setInterval(fetchPrice, 30000);
-    return () => clearInterval(interval); // Clean up interval on component unmount
+    fetchKWEUSDTPrice(); // Fetch the price on component load
+    const interval = setInterval(fetchKWEUSDTPrice, 30000); // Update price every 30 seconds
+    return () => clearInterval(interval); // Clear interval on component unmount
   }, []);
 
   return (
     <div className="price-ticker">
-      <h2>KWE/USDT Price</h2>
-      <p>{error ? error : `Last Price: ${price}`}</p>
+      {error ? (
+        <p className="error">{error}</p>
+      ) : price ? (
+        <p>KWE/USDT Last Price: ${price}</p>
+      ) : (
+        <p>Loading price...</p>
+      )}
     </div>
   );
 };
