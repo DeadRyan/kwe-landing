@@ -38,6 +38,10 @@ const Home = () => {
       <div className="section-5 wf-section">
         <h1 className="heading-10">Green energy<br/>Meets Blockchain <br/>Technology.</h1>
         <div className="text-block-9">KWE Network is revolutionizing the renewable industry, harnessing the power of decentralization to provide industrial-scale Green Energy production and Green Energy storage solutions allowing global participation in the energy retail market via blockchain.</div>
+      
+      {/* Add the PriceTicker component here */}
+      <PriceTicker />
+      
       </div>
       <div className="section-12 wf-section">
         <div className="container-12 w-container">
