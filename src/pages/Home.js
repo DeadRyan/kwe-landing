@@ -34,25 +34,7 @@ import PriceTicker from '../PriceTicker'; // Adjust the path if necessary
 
 const Home = () => {
   return(
-
-    function Home() {
-      return (
-        <div>
-          {/* Add the PriceTicker at the top of the Home page */}
-          <PriceTicker />
-    
-          {/* Other content of the Home page */}
-          <section>
-            {/* Your existing content */}
-          </section>
-        </div>
-      );
-    }
-    
-    export default Home;
-    
-
-    <>
+     <>
       <div className="section-5 wf-section">
         <h1 className="heading-10">Green energy<br/>Meets Blockchain <br/>Technology.</h1>
         <div className="text-block-9">KWE Network is revolutionizing the renewable industry, harnessing the power of decentralization to provide industrial-scale Green Energy production and Green Energy storage solutions allowing global participation in the energy retail market via blockchain.</div>
