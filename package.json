@@ -6,6 +6,8 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "node-fetch": "^2.6.7",            // Added to handle server-side API calls
+    "express": "^4.18.1",               // Added for Express.js
     "node-sass": "^8.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -14,7 +16,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node server.js",          // Modified to run server.js instead of react-scripts
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -37,13 +39,6 @@
       "last 1 safari version"
     ]
   },
-
-
-"proxy": "http://154.38.178.214",  // <-- This will proxy API requests to your VPS in development
-
   "devDependencies": {}
-
- 
-  
-
 }
+

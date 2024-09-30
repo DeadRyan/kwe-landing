@@ -4,10 +4,10 @@ const PriceTicker = () => {
   const [price, setPrice] = useState('Fetching price...');
   const [error, setError] = useState('');
 
-  // Function to fetch the KWE/USDT price from the VPS API
   const fetchPrice = async () => {
     try {
-      const response = await fetch('http://154.38.178.214/api/price'); // Replace with your VPS IP address
+      // Fetch from the proxy route created in server.js
+      const response = await fetch('/api/price');
       const data = await response.json();
 
       if (data.success) {
@@ -22,10 +22,8 @@ const PriceTicker = () => {
 
   useEffect(() => {
     fetchPrice();
-
-    // Optionally refresh the price every 30 seconds
-    const interval = setInterval(fetchPrice, 30000);
-    return () => clearInterval(interval); // Clean up interval on component unmount
+    const interval = setInterval(fetchPrice, 30000); // Optionally, refresh the price every 30 seconds
+    return () => clearInterval(interval);
   }, []);
 
   return (
