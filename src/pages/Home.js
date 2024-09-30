@@ -30,8 +30,28 @@ import CamiImg from './../images/Cami.png';
 import BrendaImg from './../images/Brenda.png';
 import AlexImg from './../images/Alex.png';
 import './../styles/home.scss';
+import PriceTicker from '../PriceTicker'; // Adjust the path if necessary
+
 const Home = () => {
   return(
+
+    function Home() {
+      return (
+        <div>
+          {/* Add the PriceTicker at the top of the Home page */}
+          <PriceTicker />
+    
+          {/* Other content of the Home page */}
+          <section>
+            {/* Your existing content */}
+          </section>
+        </div>
+      );
+    }
+    
+    export default Home;
+    
+
     <>
       <div className="section-5 wf-section">
         <h1 className="heading-10">Green energy<br/>Meets Blockchain <br/>Technology.</h1>

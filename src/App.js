@@ -1,3 +1,8 @@
+import PriceTicker from '../PriceTicker'; // Adjust the path if necessary
+import PriceTicker from '../PriceTicker'; // Adjust the path if necessary
+
+
+
 import Home from './pages/Home';
 import Product from './pages/Product';
 import Token from './pages/Token';
