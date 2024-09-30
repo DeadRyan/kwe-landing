@@ -37,14 +37,13 @@
       "last 1 safari version"
     ]
   },
+
+
+"proxy": "http://154.38.178.214",  // <-- This will proxy API requests to your VPS in development
+
   "devDependencies": {}
 
-  {
-    "name": "your-app",
-    "version": "0.1.0",
-    "private": true,
-    "proxy": "http://154.38.178.214"
-  }
+ 
   
 
 }
