@@ -22,7 +22,7 @@ export const Footer = () => {
             <Link to="token" className={`${curPath === '/token'? 'active': ''}`}>Token</Link>
             <Link to="whitepaper" className={`${curPath === '/whitepaper'? 'active': ''}`}>Whitepaper</Link>
           </div>
-          <div className='copyright'>© 2024 KWE Network. All Rights Reserved.</div>
+          <div className='copyright'>© 2025 KWE Network Inc. All Rights Reserved.</div>
         
       </div>
   );
