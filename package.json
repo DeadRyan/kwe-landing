@@ -6,6 +6,9 @@
 
   "private": true,
 
+  
+
+
   "dependencies": {
 
     "@testing-library/jest-dom": "^5.16.5",
@@ -76,6 +79,10 @@
 
   },
 
+  "engines": {
+    "node": "20.17.0",
+    "npm": "11.1.0"
+  },
 
   "devDependencies": {}
 
